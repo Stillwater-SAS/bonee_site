@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bonee — L'appli de budget et d'épargne simple et motivante</title>
-  <meta name="description" content="Bonee t'aide à suivre tes revenus, dépenses et économies, à atteindre tes objectifs et à garder le cap grâce aux flammes. Disponible sur l'App Store.">
+  <meta name="description" content="Bonee t'aide à suivre tes revenus, dépenses et économies, à atteindre tes objectifs et à garder le cap grâce aux flammes. Disponible sur l'App Store et sur Google Play.">
   <link rel="canonical" href="https://bonee.fr/">
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -15,6 +15,23 @@
   <meta property="og:url" content="https://bonee.fr/">
   <meta property="og:image" content="https://bonee.fr/img/apercu.jpg">
   <meta name="apple-itunes-app" content="app-id=6762883127">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Bonee - Budget & Épargne",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "iOS, Android",
+    "inLanguage": "fr",
+    "url": "https://bonee.fr/",
+    "publisher": { "@type": "Organization", "name": "Stillwater SAS" },
+    "downloadUrl": [
+      "https://apps.apple.com/fr/app/bonee-budget-%C3%A9pargne/id6762883127",
+      "https://play.google.com/store/apps/details?id=com.mycompany.bonee"
+    ],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+  }
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,8 +55,11 @@
         <div>
           <h1>Ton budget, <span>enfin simple</span> à suivre.</h1>
           <p class="lead">Note tes revenus, tes dépenses et tes économies en quelques secondes, vois où part ton argent et avance vers tes objectifs. Bonee reste simple et agréable à utiliser, jour après jour.</p>
-          <a class="btn" href="https://apps.apple.com/fr/app/bonee-budget-%C3%A9pargne/id6762883127">Télécharger sur l'App Store</a>
-          <p class="note">Disponible sur iPhone. Version Android : bientôt.</p>
+          <div class="stores">
+            <a class="btn" href="https://apps.apple.com/fr/app/bonee-budget-%C3%A9pargne/id6762883127">Télécharger sur l'App Store</a>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.mycompany.bonee&amp;hl=fr">Télécharger sur Google Play</a>
+          </div>
+          <p class="note">Disponible sur iPhone et sur Android.</p>
         </div>
         <img class="shot" src="img/apercu.jpg" width="1000" height="1250" alt="Aperçu de l'application Bonee : écran Budget avec graphique en anneau et écran Objectifs">
       </div>
@@ -77,10 +97,10 @@
       <div class="wrap">
         <h2>Questions fréquentes</h2>
         <p class="sub">Une autre question ? <a href="support.html">Écris-nous</a>.</p>
-        <details><summary>Bonee est-elle gratuite ?</summary><p>Tu peux utiliser Bonee gratuitement. Une formule Premium (abonnement géré par l'App Store) débloque notamment les budgets et objectifs illimités. Les prix et conditions sont affichés dans l'app avant tout achat.</p></details>
+        <details><summary>Bonee est-elle gratuite ?</summary><p>Tu peux utiliser Bonee gratuitement. Une formule Premium (abonnement géré par l'App Store ou Google Play) débloque notamment les budgets et objectifs illimités. Les prix et conditions sont affichés dans l'app avant tout achat.</p></details>
         <details><summary>Bonee se connecte-t-elle à ma banque ?</summary><p>Non. Tu saisis toi-même tes opérations. Bonee n'accède à aucun compte bancaire.</p></details>
         <details><summary>Comment supprimer mon compte et mes données ?</summary><p>Dans l'app : Profil → Paramètres → Supprimer mon compte. Tu peux aussi suivre la procédure sur la <a href="delete-account.html">page de suppression de compte</a>.</p></details>
-        <details><summary>Comment résilier mon abonnement Premium ?</summary><p>Depuis les réglages de ton compte Apple : Réglages → ton nom → Abonnements → Bonee. La résiliation se fait uniquement auprès d'Apple.</p></details>
+        <details><summary>Comment résilier mon abonnement Premium ?</summary><p>Sur iPhone : Réglages → ton nom → Abonnements → Bonee. Sur Android : Google Play → ton profil → Paiements et abonnements → Abonnements → Bonee. La résiliation se fait uniquement auprès d'Apple ou de Google, selon la boutique où tu as souscrit.</p></details>
         <details><summary>Mes données sont-elles synchronisées entre appareils ?</summary><p>Oui, elles sont rattachées à ton compte : tu retrouves ton budget en te reconnectant.</p></details>
       </div>
     </section>
