@@ -13,9 +13,11 @@
   var formulaire = document.getElementById('formulaire');
   var suite = document.getElementById('suite');
 
+  var REDEMANDER = 'Redemandes-en un depuis l\'application.';
+
   var ERREURS = {
-    EXPIRED_OOB_CODE: 'Ce lien a expiré. Redemande-en un depuis l\'application.',
-    INVALID_OOB_CODE: 'Ce lien est invalide ou a déjà été utilisé. Redemande-en un depuis l\'application.',
+    EXPIRED_OOB_CODE: 'Ce lien a expiré. ' + REDEMANDER,
+    INVALID_OOB_CODE: 'Ce lien est invalide ou a déjà été utilisé. ' + REDEMANDER,
     USER_DISABLED: 'Ce compte est désactivé.',
     WEAK_PASSWORD: 'Le mot de passe est trop faible (8 caractères minimum).'
   };
@@ -71,7 +73,7 @@
   }
 
   if (!code || !window.BONEE_FIREBASE_API_KEY) {
-    afficher('Lien incomplet', 'Ce lien est incomplet. Redemande-en un depuis l\'application.', false);
+    afficher('Lien incomplet', 'Ce lien est incomplet. ' + REDEMANDER, false);
   } else if (mode === 'verifyEmail') {
     verifierEmail();
   } else if (mode === 'resetPassword') {
