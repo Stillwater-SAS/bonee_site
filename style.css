@@ -113,3 +113,9 @@ footer.site { border-top: 1px solid var(--border); padding: 32px 0; color: var(-
 footer.site .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
 footer.site a { color: var(--muted); margin-right: 18px; }
 footer.site a:hover { color: var(--blue); }
+
+/* Page de traitement des liens d'authentification */
+.action-form { display: grid; gap: 8px; max-width: 360px; margin-top: 20px; }
+.action-form[hidden], #suite[hidden] { display: none; }
+.action-form input { padding: 12px; font: inherit; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); color: var(--text); }
+.action-form .btn { margin-top: 8px; border: 0; cursor: pointer; font: inherit; }
